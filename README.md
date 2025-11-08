@@ -3,12 +3,12 @@
 这是一个本地静态网站，包含若干 HTML 页面和图片。以下说明帮助你将本站点发布到 GitHub Pages 并在搜索引擎中被索引。
 
 ## 已添加
-- `.github/workflows/deploy-pages.yml` — GitHub Actions 工作流：推送到 `main` 时会把仓库内容发布到 GitHub Pages。
-- `03.html` 已加入 favicon 引用（`img/小图标.svg`）。
 
 ## 快速部署到 GitHub
 1. 在 GitHub 上创建一个新的仓库（例如 `your-username/your-repo`）。不要初始化 README 或 .gitignore（可选）。
 2. 在本地仓库根目录执行：
+
+注意：为了兼容性，工作流现在使用 `peaceiris/actions-gh-pages@v3`，它会把站点直接发布到 `gh-pages` 分支（这是一个常用且稳定的部署方式）。
 
 ```powershell
 # 进入项目目录
