@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap - your GitHub Pages URL
+Sitemap: https://Komorebi-54293.github.io/myweb/sitemap.xml
+
+# If you want to block any path, add Disallow lines below
+# Disallow: /secret/

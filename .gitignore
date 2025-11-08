@@ -1,0 +1,21 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.env
+*.log
+__pycache__/
+*.pyc
+.idea/
+
+# Build artifacts
+dist/
+build/
+
+# OS files
+desktop.ini
+
+# GitHub Pages artifact
+# Note: We intentionally do NOT ignore the .github/ folder so workflows are committed
+deploy_output.txt
+push_output.txt
