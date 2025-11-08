@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Masters Collection | 中国古代文学家集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Serif SC", "SimSun", serif;
+        }
+        body {
+            background-color: #faf6ed;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-bottom: 3rem;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 3px;
+        }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .writer-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            margin-bottom: 4rem;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            transition: transform 0.3s ease;
+        }
+        .writer-card:hover {
+            transform: translateY(-5px);
+        }
+        .writer-img {
+            width: 30%;
+            min-width: 250px;
+            object-fit: cover;
+        }
+        .writer-info {
+            width: 70%;
+            padding: 2rem;
+            min-width: 300px;
+        }
+        .writer-name {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .writer-pinyin {
+            font-size: 1rem;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+        .writer-era {
+            color: #e67e22;
+            font-style: italic;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border: 1px solid #f39c1233;
+            border-radius: 4px;
+        }
+        .writer-intro {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        .writer-works h4 {
+            color: #34495e;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .writer-works h4::before {
+            content: "📜";
+            font-size: 1.1rem;
+        }
+        .works-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        .work-item {
+            background-color: #f8f4e9;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            color: #2c3e50;
+            border: 1px solid #eae3d2;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+            background-color: #2c3e50;
+            margin-top: 5rem;
+        }
+        @media (max-width: 768px) {
+            .writer-card {
+                flex-direction: column;
+            }
+            .writer-img, .writer-info {
+                width: 100%;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .writer-name {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页头 -->
+    <div class="header">
+        <h1>Literary Masters Collection</h1>
+        <p>中国古代文学家集 · 群星闪耀的文学长河</p>
+    </div>
+
+    <!-- 核心内容区 -->
+    <div class="container">
+        <!-- 李白 -->
+        <div class="writer-card">
+            <img src="/My web for study！/D:\vscode\homework\Let us study!\img\李白.jpg" alt="李白画像" class="writer-img">
+            <div class="writer-info">
+                <h2 class="writer-name">李白 <span class="writer-pinyin">Lǐ Bái</span></h2>
+                <span class="writer-era">唐代 · 盛唐时期（701-762年）</span>
+                <p class="writer-intro">字太白，号青莲居士，世称“诗仙”，唐代伟大的浪漫主义诗人。其诗歌气势磅礴、想象瑰丽，语言清新自然，题材广泛，涵盖山水田园、边塞战争、饮酒抒怀等。李白的诗作充满积极进取的精神与豪放洒脱的气质，对后世诗歌发展影响深远，与杜甫并称为“李杜”。</p>
+                <div class="writer-works">
+                    <h4>代表著作</h4>
+                    <div class="works-list">
+                        <span class="work-item">《静夜思》</span>
+                        <span class="work-item">《望庐山瀑布》</span>
+                        <span class="work-item">《将进酒》</span>
+                        <span class="work-item">《蜀道难》</span>
+                        <span class="work-item">《梦游天姥吟留别》</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 杜甫 -->
+        <div class="writer-card">
+            <img src="/My web for study！/D:\vscode\homework\Let us study!\img\杜甫.jpg" alt="杜甫画像" class="writer-img">
+            <div class="writer-info">
+                <h2 class="writer-name">杜甫 <span class="writer-pinyin">Dù Fǔ</span></h2>
+                <span class="writer-era">唐代 · 盛唐转中唐（712-770年）</span>
+                <p class="writer-intro">字子美，自号少陵野老，世称“诗圣”，唐代伟大的现实主义诗人。其诗歌深刻反映了安史之乱前后的社会动荡与民生疾苦，被誉为“诗史”。杜甫的诗作格律严谨、语言精炼，情感沉郁顿挫，充满忧国忧民的情怀，对中国古典诗歌的现实主义传统影响深远。</p>
+                <div class="writer-works">
+                    <h4>代表著作</h4>
+                    <div class="works-list">
+                        <span class="work-item">《登高》</span>
+                        <span class="work-item">《春望》</span>
+                        <span class="work-item">《茅屋为秋风所破歌》</span>
+                        <span class="work-item">《三吏》</span>
+                        <span class="work-item">《三别》</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 苏轼 -->
+        <div class="writer-card">
+            <img src="/My web for study！/D:\vscode\homework\Let us study!\img\苏轼.jpg" alt="苏轼画像" class="writer-img">
+            <div class="writer-info">
+                <h2 class="writer-name">苏轼 <span class="writer-pinyin">Sū Shì</span></h2>
+                <span class="writer-era">宋代 · 北宋（1037-1101年）</span>
+                <p class="writer-intro">字子瞻，号东坡居士，北宋中期文坛领袖，豪放派词人代表，在诗、词、文、书、画等领域均有极高成就。其词开豪放一派，打破了词为“艳科”的传统；散文位列“唐宋八大家”之一，文理自然、姿态横生；书法与黄庭坚、米芾、蔡襄并称“宋四家”。</p>
+                <div class="writer-works">
+                    <h4>代表著作</h4>
+                    <div class="works-list">
+                        <span class="work-item">《念奴娇·赤壁怀古》</span>
+                        <span class="work-item">《水调歌头·明月几时有》</span>
+                        <span class="work-item">《赤壁赋》</span>
+                        <span class="work-item">《饮湖上初晴后雨》</span>
+                        <span class="work-item">《题西林壁》</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 李清照 -->
+        <div class="writer-card">
+            <img src="/My web for study！/D:\vscode\homework\Let us study!\img\李清照.jpg" alt="李清照画像" class="writer-img">
+            <div class="writer-info">
+                <h2 class="writer-name">李清照 <span class="writer-pinyin">Lǐ Qīngzhào</span></h2>
+                <span class="writer-era">宋代 · 南北宋之交（1084-约1155年）</span>
+                <p class="writer-intro">号易安居士，宋代杰出女词人，婉约派代表，被誉为“千古第一才女”。其词作前期多写闺阁生活、相思之情，语言清丽、情感细腻；南渡后则融入家国之思、身世之悲，风格沉郁苍凉。她提出“词别是一家”的词学观点，对词的格律与意境有独特贡献。</p>
+                <div class="writer-works">
+                    <h4>代表著作</h4>
+                    <div class="works-list">
+                        <span class="work-item">《声声慢·寻寻觅觅》</span>
+                        <span class="work-item">《醉花阴·薄雾浓云愁永昼》</span>
+                        <span class="work-item">《如梦令·常记溪亭日暮》</span>
+                        <span class="work-item">《一剪梅·红藕香残玉簟秋》</span>
+                        <span class="work-item">《武陵春·春晚》</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 屈原 -->
+        <div class="writer-card">
+            <img src="/My web for study！/D:\vscode\homework\Let us study!\img\屈原.jpg" alt="屈原画像" class="writer-img">
+            <div class="writer-info">
+                <h2 class="writer-name">屈原 <span class="writer-pinyin">Qū Yuán</span></h2>
+                <span class="writer-era">战国 · 楚国（约前340-前278年）</span>
+                <p class="writer-intro">名平，字原，战国时期楚国诗人、政治家，中国浪漫主义文学的奠基人，“楚辞”的创立者和代表作家。其作品充满爱国情怀与不屈气节，运用大量神话传说、香草美人意象，句式灵活，辞藻华丽，开创了中国文学史上的“骚体”诗歌形式。</p>
+                <div class="writer-works">
+                    <h4>代表著作</h4>
+                    <div class="works-list">
+                        <span class="work-item">《离骚》</span>
+                        <span class="work-item">《九歌》</span>
+                        <span class="work-item">《天问》</span>
+                        <span class="work-item">《九章》</span>
+                        <span class="work-item">《招魂》</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>© 2025 Literary Masters Collection | 中国古代文学家集 版权所有</p>
+    </div>
+</body>
+</html>
+
+

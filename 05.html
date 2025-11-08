@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Chinese Writers | 中国近代文学家集</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Serif SC", "SimSun", serif;
+        }
+        body {
+            background-color: #f5f2eb;
+            color: #2d3142;
+            line-height: 1.8;
+        }
+        .header {
+            background: linear-gradient(135deg, #8b5a2b 0%, #5c4033 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .header h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.8rem;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            font-style: italic;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .writer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+        .writer-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .writer-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        .writer-img {
+            width: 30%;
+            min-width: 300px;
+            height: 420px;
+            object-fit: cover;
+            border-right: 4px solid #8b5a2b;
+        }
+        .writer-info {
+            width: 70%;
+            min-width: 300px;
+            padding: 2.8rem;
+        }
+        .writer-name {
+            font-size: 2.1rem;
+            color: #5c4033;
+            margin-bottom: 0.6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0d8d0;
+            padding-bottom: 0.8rem;
+        }
+        .writer-pinyin {
+            font-size: 1.1rem;
+            color: #8b7355;
+            font-weight: normal;
+            font-style: italic;
+        }
+        .writer-era {
+            color: #d2691e;
+            font-size: 1.05rem;
+            margin-bottom: 1.8rem;
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border: 1px solid #d2691e33;
+            border-radius: 6px;
+        }
+        .writer-intro {
+            font-size: 1.1rem;
+            color: #3e4451;
+            margin-bottom: 2rem;
+            text-align: justify;
+            line-height: 1.9;
+        }
+        .writer-works h4 {
+            color: #8b5a2b;
+            font-size: 1.3rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 600;
+        }
+        .writer-works h4::before {
+            content: "📜";
+            font-size: 1.5rem;
+        }
+        .works-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.1rem;
+        }
+        .work-item {
+            background-color: #faf6ed;
+            padding: 0.7rem 1.4rem;
+            border-radius: 30px;
+            font-size: 1.05rem;
+            color: #5c4033;
+            transition: all 0.2s ease;
+            border: 1px solid #e0d8d0;
+        }
+        .work-item:hover {
+            background-color: #8b5a2b;
+            color: white;
+            transform: scale(1.08);
+            border-color: #8b5a2b;
+        }
+        .footer {
+            text-align: center;
+            padding: 2.8rem 1rem;
+            background-color: #5c4033;
+            color: #e0d8d0;
+            margin-top: 8rem;
+        }
+        .footer p {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 992px) {
+            .writer-card {
+                flex-direction: column;
+            }
+            .writer-img {
+                width: 100%;
+                height: 320px;
+                border-right: none;
+                border-bottom: 4px solid #8b5a2b;
+            }
+            .writer-info {
+                width: 100%;
+                padding: 2rem;
+            }
+            .writer-name {
+                font-size: 1.9rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 0 1.5rem;
+            }
+            .writer-img {
+                height: 280px;
+            }
+            .writer-intro {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页头 -->
+    <div class="header">
+        <h1>Modern Chinese Writers</h1>
+        <p>中国近代文学家集 · 近代变革中的文学觉醒</p>
+    </div>
+
+    <!-- 核心内容区 -->
+    <div class="container">
+        <div class="writer-list">
+           
+
+            <!-- 郭沫若 -->
+            <div class="writer-card">
+                <img src="/My web for study!/D:\vscode\homework\Let us study!\img\郭沫若.jpg" alt="郭沫若照片" class="writer-img">
+                <div class="writer-info">
+                    <h2 class="writer-name">郭沫若 <span class="writer-pinyin">Guō Mòruò</span></h2>
+                    <span class="writer-era">1892-1978年 · 浪漫主义文学旗手</span>
+                    <p class="writer-intro">原名郭开贞，四川乐山人。中国近代著名诗人、剧作家、历史学家、古文字学家，新文化运动的重要参与者。其诗歌创作充满狂飙突进的激情与浪漫主义色彩，形式自由奔放，语言雄浑豪迈，开创了中国现代自由诗的新风尚。除文学创作外，他在历史研究、考古学等领域亦有深厚造诣，是一位百科全书式的文化巨匠，对中国近代文化发展影响深远。</p>
+                    <div class="writer-works">
+                        <h4>代表著作</h4>
+                        <div class="works-list">
+                            <span class="work-item">《女神》</span>
+                            <span class="work-item">《屈原》</span>
+                            <span class="work-item">《虎符》</span>
+                            <span class="work-item">《棠棣之花》</span>
+                            <span class="work-item">《甲申三百年祭》</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 郁达夫 -->
+            <div class="writer-card">
+                <img src="/My web for study！/D:\vscode\homework\Let us study!\img\郁达夫.jpg" alt="郁达夫照片" class="writer-img">
+                <div class="writer-info">
+                    <h2 class="writer-name">郁达夫 <span class="writer-pinyin">Yù Dáfū</span></h2>
+                    <span class="writer-era">1896-1945年 · 创造社代表作家</span>
+                    <p class="writer-intro">原名郁文，浙江富阳人。中国近代著名小说家、散文家，创造社的核心成员之一。其作品以“自叙传”风格著称，敢于袒露内心世界，情感真挚细腻又略带感伤，深刻反映了五四时期青年的苦闷与彷徨。文字清丽自然，兼具抒情性与批判性，在小说创作中打破了传统叙事模式，注重心理描写与情感表达，对中国现代抒情小说的发展具有开创性意义。</p>
+                    <div class="writer-works">
+                        <h4>代表著作</h4>
+                        <div class="works-list">
+                            <span class="work-item">《沉沦》</span>
+                            <span class="work-item">《春风沉醉的晚上》</span>
+                            <span class="work-item">《迟桂花》</span>
+                            <span class="work-item">《故都的秋》</span>
+                            <span class="work-item">《迷羊》</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 徐志摩 -->
+            <div class="writer-card">
+                <img src="/My web for study！/D:\vscode\homework\Let us study!\img\徐志摩.jpg" alt="徐志摩照片" class="writer-img">
+                <div class="writer-info">
+                    <h2 class="writer-name">徐志摩 <span class="writer-pinyin">Xú Zhìmó</span></h2>
+                    <span class="writer-era">1897-1931年 · 新月派代表诗人</span>
+                    <p class="writer-intro">原名徐章垿，浙江海宁人。中国近代著名诗人、散文家，新月派的核心人物，新月诗社的发起人之一。其诗歌创作追求“音乐美、绘画美、建筑美”的艺术境界，语言清新优美，意境空灵飘逸，充满浪漫主义的诗意与温情。他的诗作打破了传统诗歌的格律束缚，又兼具古典诗词的韵味，开创了中国现代格律诗的新范式，被誉为“中国现代诗坛的风流才子”。</p>
+                    <div class="writer-works">
+                        <h4>代表著作</h4>
+                        <div class="works-list">
+                            <span class="work-item">《再别康桥》</span>
+                            <span class="work-item">《雪花的快乐》</span>
+                            <span class="work-item">《偶然》</span>
+                            <span class="work-item">《翡冷翠的一夜》</span>
+                            <span class="work-item">《志摩的诗》</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 朱自清 -->
+            <div class="writer-card">
+                <img src="/My web for study！/D:\vscode\homework\Let us study!\img\朱自清.jpg" alt="朱自清照片" class="writer-img">
+                <div class="writer-info">
+                    <h2 class="writer-name">朱自清 <span class="writer-pinyin">Zhū Zìqīng</span></h2>
+                    <span class="writer-era">1898-1948年 · 散文大家</span>
+                    <p class="writer-intro">原名自华，字佩弦，江苏扬州人。中国近代著名散文家、诗人、学者、民主战士。其散文创作以“语言精炼、情感真挚、意境优美”著称，善于从平凡的生活场景中挖掘深刻的人生哲理，文字质朴自然又饱含深情，具有极高的艺术价值。他的散文兼具叙事性与抒情性，开创了中国现代散文的新风格，多篇作品被选入教材，影响了一代又一代读者。</p>
+                    <div class="writer-works">
+                        <h4>代表著作</h4>
+                        <div class="works-list">
+                            <span class="work-item">《背影》</span>
+                            <span class="work-item">《荷塘月色》</span>
+                            <span class="work-item">《春》</span>
+                            <span class="work-item">《匆匆》</span>
+                            <span class="work-item">《桨声灯影里的秦淮河》</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 闻一多 -->
+            <div class="writer-card">
+                <img src="/My web for study！/D:\vscode\homework\Let us study!\img\闻一多.jpg" alt="闻一多照片" class="writer-img">
+                <div class="writer-info">
+                    <h2 class="writer-name">闻一多 <span class="writer-pinyin">Wén Yīduō</span></h2>
+                    <span class="writer-era">1899-1946年 · 新月派诗人、学者</span>
+                    <p class="writer-intro">原名闻家骅，湖北浠水人。中国近代著名诗人、学者、民主战士，新月派的重要代表人物。其诗歌创作注重格律美与意境美，语言精炼典雅，充满爱国主义情怀与对美好理想的追求，提出了“三美”（音乐美、绘画美、建筑美）的诗歌创作理论，对中国现代格律诗的发展产生了重要影响。同时，他在古典文学研究领域造诣深厚，治学严谨，是一位集诗人、学者、斗士于一身的文化名人。</p>
+                    <div class="writer-works">
+                        <h4>代表著作</h4>
+                        <div class="works-list">
+                            <span class="work-item">《红烛》</span>
+                            <span class="work-item">《死水》</span>
+                            <span class="work-item">《七子之歌》</span>
+                            <span class="work-item">《唐诗杂论》</span>
+                            <span class="work-item">《古典新义》</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
